@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+
 import {
   SocialLoginModule,
   SocialAuthServiceConfig
@@ -31,6 +33,7 @@ export const usersRoutes: Routes = [
     ReactiveFormsModule,
     InputTextModule,
     ButtonModule,
+    ToastModule,
     SocialLoginModule,
   ],
   providers: [

@@ -19,7 +19,7 @@ export class ProductsFormComponent implements OnInit, OnDestroy {
   imageDisplay: string | ArrayBuffer | undefined;
   currentProductId!: string;
   endsubs$: Subject<any> = new Subject();
-  images: File[] = [];;
+  images: File[] = [];
   newImages: File[] = [];
   
   constructor(
