@@ -1,0 +1,55 @@
+.authentication {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(235deg, $black-russian, $black-contrast-shade);
+    .logo {
+        display: none;
+    }
+    .main_content {
+        width: 45%;
+        box-shadow: 0 5px 5px rgba(0,0,0,.4);
+        margin: 7em auto;
+        display: flex;
+        border: 1px solid #22407C;
+        .company_info {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .login_form {
+            background-color: transparent;
+            align-self: center;
+            h3, h2 {
+                color: #fff;
+            }
+            .full-btn {
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .authentication {
+        display: block !important;
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex !important;
+            padding-top: 140px;
+            width: 40%;
+        }
+        .main_content{
+            width: 95% !important;
+            margin: 3em auto;
+            .company_info{
+                display: none;
+            }
+        }
+        .login_form {
+            border-radius: 5px;
+        }
+    }
+}

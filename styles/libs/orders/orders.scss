@@ -1,0 +1,10 @@
+@import './cart.scss';
+@import './checkout.scss';
+@import './order-summary.scss';
+
+.p-badge {
+    padding: 0 0.5rem;
+    .p-badge-no-gutter {
+        padding: unset
+    }
+}

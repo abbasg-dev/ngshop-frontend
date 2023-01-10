@@ -1,0 +1,25 @@
+<div *ngIf="isHome" class="welcome-page">
+    <div class="grid p-fluid">
+        <div class="field col-12 lg:col-12">
+            <h1>Welcome to E-commerce ON</h1>
+            <div class="cart-shipping mb-5">
+                Proceed to checkout to complete your order.
+            </div>
+            <div [style]="{'width':'max-content'}">
+                <p-button 
+                    label="My Cart" 
+                    icon="pi pi-shopping-cart" 
+                    styleClass="checkout-btn w-20"
+                    (onClick)="proceedToCheckout()"
+                >
+                </p-button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="isCheckout">
+    <ngshop-checkout-page></ngshop-checkout-page>
+</div>
+<div *ngIf="isThankYou">
+    <ngshop-thank-you></ngshop-thank-you>
+</div>

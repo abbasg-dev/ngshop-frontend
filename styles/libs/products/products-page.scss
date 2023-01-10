@@ -1,0 +1,28 @@
+.products-page {
+    h4 { color: $primary-color; }
+    .categories-field {
+        .field-checkbox {
+            label {
+                color: $primary-color;
+            }
+        }
+    }
+    .products-items {
+        padding: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .products-page {
+        .categories-field {
+            display: flex;
+            .field-checkbox {
+                margin: 0px 5px;
+            }
+        }
+        .products-items {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

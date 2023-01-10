@@ -1,0 +1,107 @@
+.admin {
+    &-wrapper {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-main.active {
+        width: calc(100% - 175px);
+        margin-left: 175px;
+    }
+
+    &-menu-control {
+        height: 50px;
+        padding: 14px;
+        background: linear-gradient(90deg, $black-pearl 0%, #4b6cb7 100%);
+
+        .pi {
+            font-size: 25px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+    &-sidebar {
+        position: unset;
+        width: 175px;
+        height: 100%;
+        top: 0;
+        
+        .p-sidebar {
+            width: 175px;
+            background-color: $black-pearl;
+
+            .p-sidebar-content {
+                padding: 0;
+            }
+        }
+
+        .logo {
+            padding: 20px;
+            width: 100%;
+
+            img {
+                max-width: 80%;
+            }
+        }
+
+        .links {
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: block;
+                    list-style: none;
+                    width: 100%;
+                    cursor: pointer;
+
+                    a {
+                        color: var(--surface-a);
+                        padding: 10px 15px;
+                        display: block;
+                        width: 100%;
+
+                        &:hover {
+                            background-color: var(--blue-700);
+                        }
+
+                        i {
+                            margin-right: 8px;
+                            margin-top: 0;
+                            float: left;
+                        }
+
+                        &.logout {
+                            color: var(--blue-500);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-page {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .admin {
+        &-main.active {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &-main {
+            .confirm-modal {
+                width: 92vw !important;
+                .p-dialog-content,
+                .p-dialog-footer  {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

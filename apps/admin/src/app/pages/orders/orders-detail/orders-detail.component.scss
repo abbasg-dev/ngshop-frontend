@@ -1,0 +1,41 @@
+.order-details {
+	background: #ffffff;
+	color: #495057;
+	box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 
+                0 1px 1px 0 rgb(0 0 0 / 14%), 
+                0 1px 3px 0 rgb(0 0 0 / 12%);
+	border-radius: 3px;
+	padding: 20px;
+	width: 100%;
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		margin-top: 0px;
+		color: #495057;
+	}
+	p {
+		font-weight: 400;
+		color: #6c757d;
+	}
+	.order-items {
+		background-color: #F4F2F2;
+		padding: 4px;
+		margin: 5px 0px;
+	}
+	.product-name {
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 7px;
+	}
+	.order-detail {
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .order-details {
+        width: fit-content;
+    }    
+}

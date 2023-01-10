@@ -1,0 +1,35 @@
+.d-item {
+    color: var(--surface-0);
+    .pi {
+        font-size: 4em;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .count {
+        font-size: 2.5em;
+    }
+}
+.d-orders {
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+}
+  
+.d-products {
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+}
+  
+.d-users {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+  
+.d-totalsales {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}    
+
+@media only screen and (max-width: 767px) {
+    .d-item {
+        .pi {
+            font-size: 2em !important;
+        }
+    }
+}

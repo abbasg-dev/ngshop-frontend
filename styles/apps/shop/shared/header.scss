@@ -1,0 +1,41 @@
+header {
+    margin-bottom: 25px;
+    .logo {
+        img {
+            width: 70px;
+        }
+    }
+    .search {
+        padding-top: 25px;
+    }
+    .navigation {
+        padding-top: 38px;
+    }
+    .tools {
+        padding-top: 38px;
+        text-align-last: end;
+        .pi {
+            margin-right: 10px;
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        height: unset;
+        text-align: center;
+        .logo-field,
+        .search,
+        .navigation,
+        .tools {
+            padding: 0px;
+            margin: 10px 0px;
+            text-align-last: center;
+            .pi {
+                font-size: 2rem;
+            }
+        }
+    }
+}

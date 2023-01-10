@@ -1,0 +1,22 @@
+.checkout-page {
+    color: $primary-color;
+    
+    button {
+        background-color: $primary-color;
+        color: $black-pearl;
+        border: 0;
+    }
+
+    .checkout {
+        &-form {
+            margin-top: 25px;
+        }
+
+        &-button {
+            margin-top: 15px;
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

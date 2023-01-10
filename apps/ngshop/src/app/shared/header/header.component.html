@@ -1,0 +1,22 @@
+<header>
+    <div class="grid p-fluid">
+        <div class="field col-12 md:col-4 logo-field">
+            <a class="logo" routerLink="/home">
+                <img src="assets/images/eCommerce-on-logo.png" alt="">
+            </a>
+        </div>
+        <div class="field col-12 md:col-4 search">
+            <ngshop-products-search></ngshop-products-search>
+        </div>
+        <div class="field col-12 md:col-4 tools">
+            <a (click)="logout()">
+                <i 
+                    class="pi pi-sign-out"
+                    style="font-size: 1.5rem"
+                    *ngIf="loggedInUser"
+                ></i>
+            </a>
+            <orders-cart-icon></orders-cart-icon>
+        </div>
+    </div>
+</header>

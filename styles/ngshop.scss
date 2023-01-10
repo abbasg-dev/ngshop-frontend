@@ -1,0 +1,49 @@
+// Base
+@import '~normalize.css/normalize.css';
+@import './base/colors.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+
+// Libraries
+// @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
+// @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// @import '~bootstrap/scss/bootstrap.scss';
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+@import '~animate.css/animate.css';
+@import './base/configuration.scss';
+
+// Shared
+@import './apps/shop/shared/header.scss';
+@import './apps/shop/shared/footer.scss';
+@import './apps/shop/shared/nav.scss';
+
+// Pages
+@import './apps/shop/pages/home-page.scss';
+@import './apps/shop/pages/products-list-page.scss';
+@import './apps/shop/pages/welcome-page.scss';
+
+// Libs
+@import './libs/products/products.scss';
+@import './libs/orders/orders.scss';
+@import './libs/users/users.scss';
+@import './libs/ui/ui.scss';
+
+body {
+    background-image: linear-gradient(235deg, $black-russian, $black-contrast-shade);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+.container {
+    background-image: linear-gradient(235deg, $black-russian, $black-contrast-shade);
+    padding: 20px 20px 0px;
+    min-height: 90%;
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        min-height: 94%;
+    }
+}

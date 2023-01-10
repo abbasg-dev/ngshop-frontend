@@ -1,0 +1,54 @@
+<div class="authentication">
+    <img src="assets/images/eCommerce-on-logo.png" class='logo' alt="">
+    <div class="grid p-fluid main_content">
+    <div class="field mb-0 col-12 md:col-6 p-0 company_info">
+        <img src="assets/images/login-banner.png" alt="">
+    </div>
+    <div class="field mb-0 col-12 md:col-6 p-4 login_form">
+        <h3>Welcome!</h3>
+        <h2>eCommerce On</h2>
+        <form [formGroup]="loginFormGroup">
+            <div class="grid p-fluid mt-4">
+                <div class="field col-12 flex p-1 mb-2 justify-content-center">
+                    <p-button 
+                        label="Facebook"
+                        styleClass="p-button-primary p-button-sm"
+                        class="pr-1"
+                        icon="pi pi-facebook"
+                        (onClick)="loginWithFacebook()"
+                    ></p-button>
+                    <p-button 
+                        label="Google"
+                        styleClass="p-button-danger p-button-sm"
+                        icon="pi pi-google"
+                        (onClick)="loginWithGoogle()"
+                    ></p-button>
+                </div>
+                <div class="field col-12 mb-0">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                        <input type="text" formControlName="email" pInputText placeholder="Email" />
+                    </div>
+                    <small *ngIf="loginForm['email'].invalid && isSubmitted" class="p-error">
+                        <span *ngIf="loginForm['email'].errors['required']">email is required</span>
+                        <span *ngIf="loginForm['email'].errors['email']">email is invalid</span>
+                    </small>
+                </div>
+                <div class="field col-12 mb-0">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                        <input type="password" formControlName="password" pInputText placeholder="Password" autocomplete="on" />
+                    </div>
+                    <small *ngIf="loginForm['password'].invalid && isSubmitted" class="p-error">Password is required</small>
+                </div>
+                <div class="field col-12 mb-0">
+                    <p-button label="Login" styleClass="full-btn" (onClick)="onSubmit()"></p-button>
+                </div>
+                <div class="field col-12 mb-0" *ngIf="isSubmitted && authError">
+                    <small class="p-error">{{ authMessage }}</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

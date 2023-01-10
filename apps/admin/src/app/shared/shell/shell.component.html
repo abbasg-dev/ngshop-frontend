@@ -1,0 +1,35 @@
+<div class="admin-wrapper">
+    <div class="card admin-menu-control">
+        <i class="pi pi-bars" (click)="_openSidebar()"></i>
+    </div>
+    <p-sidebar [(visible)]="visibleSidebar" class="admin-sidebar" [modal]="false">
+        <div class="logo">
+            <img src="/assets/images/eCommerce-on-logo.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a routerLink="/"><i class="pi pi-home"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a routerLink="/products"><i class="pi pi-briefcase"></i> Products</a>
+                </li>
+                <li>
+                    <a routerLink="/categories"><i class="pi pi-list"></i> Categories</a>
+                </li>
+                <li>
+                    <a routerLink="/orders"><i class="pi pi-shopping-cart"></i> Orders</a>
+                </li>
+                <li>
+                    <a routerLink="/users"><i class="pi pi-users"></i> Users</a>
+                </li>
+                <li>
+                    <a class="logout" (click)="logoutUser()"><i class="pi pi-sign-out"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </p-sidebar>
+    <div [ngClass]="visibleSidebar ? 'admin-main active' : 'admin-main'">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="featured-products">
+    <h3>Featured Products</h3>
+    <div class="grid p-fluid justify-content-center">
+        <div class="field col-12 md:col-3 m-0 p-1" *ngFor="let product of _getFilteredProducts()">
+            <ngshop-products-product-item [product]='product'></ngshop-products-product-item>
+        </div>
+    </div>
+    <p-button
+        label="Explore more Products"
+        routerLink="/products"
+    ></p-button>
+</div>

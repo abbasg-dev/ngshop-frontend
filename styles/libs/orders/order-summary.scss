@@ -1,0 +1,32 @@
+.order-summary {
+    background-color: $primary-color;
+    color: $black-pearl;
+    padding: 15px;
+
+    .summary-price {
+        display: flex;
+        margin: 15px 0;
+        span {
+            display: block;
+            width: 80%;
+
+            &:last-child {
+                width: 20%;
+                font-weight: 600;
+            }
+
+            &.free {
+                color: $jade;
+            }
+        }
+    }
+
+    .checkout-button {
+        button {
+            width: 100%;
+            background-color: $black-pearl;
+            color: $primary-color;
+            border: 0;
+        }
+    }
+}

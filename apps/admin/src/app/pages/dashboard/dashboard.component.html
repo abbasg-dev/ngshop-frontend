@@ -1,0 +1,61 @@
+<div class="admin-page">
+    <p-card header="Dashboard" subheader="Latest Updates">
+        <div class="grid p-fluid">
+            <div class="field col-12 md:col-3">
+                <p-card styleClass="d-orders">
+                    <div class="d-item ">
+                        <div class="flex justify-content-between align-items-center text-center">
+                            <i class="pi pi-shopping-cart"></i>
+                            <span class="title">Orders</span>
+                        </div>
+                        <div class="flex justify-content-end mt-2">
+                            <span class="count">{{ statistics ? statistics[0] : '' }}</span>
+                        </div>
+                    </div>
+                </p-card>  
+            </div>
+
+            <div class="field col-12 md:col-3">
+                <p-card styleClass="d-products">
+                    <div class="d-item ">
+                        <div class="flex justify-content-between align-items-center text-center">
+                            <i class="pi pi-briefcase"></i>
+                            <span class="title">Products</span>
+                        </div>
+                        <div class="flex justify-content-end mt-2">
+                            <span class="count">{{ statistics ? statistics[1] : '' }}</span>
+                        </div>
+                    </div>
+                </p-card>  
+            </div>
+
+            <div class="field col-12 md:col-3">
+                <p-card styleClass="d-users">
+                    <div class="d-item ">
+                        <div class="flex justify-content-between align-items-center">
+                            <i class="pi pi-users"></i>
+                            <span class="title">Users</span>
+                        </div>
+                        <div class="flex justify-content-end mt-2">
+                            <span class="count">{{ statistics ? statistics[2] : '' }}</span>
+                        </div>
+                    </div>
+                </p-card>  
+            </div>
+
+            <div class="field col-12 md:col-3">
+                <p-card styleClass="d-totalsales">
+                    <div class="d-item ">
+                        <div class="flex justify-content-between align-items-center">
+                            <i class="pi pi-dollar"></i>
+                            <span class="title">Total Sales</span>
+                        </div>
+                        <div class="flex justify-content-end mt-2">
+                            <span class="count">{{ statistics ? statistics[3] : '' }}</span>
+                        </div>
+                    </div>
+                </p-card>  
+            </div>
+        </div>
+    </p-card>
+</div>
